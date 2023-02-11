@@ -10,9 +10,11 @@
 
 body {
   color: var(--primary-text-color);
-  background-color: #ffffff;
-  font-family: "Raleway", sans-serif;
   font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  background-color: var(--white-color);
 }
 
 .list {
@@ -49,19 +51,13 @@ body {
   color: var(--title--text-color);
 }
 
-.site-nav {
+.site-nav .site-nav-link {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: var(--title--text-color);
-}
-
-.site-nav-link {
   text-decoration: none;
 }
 
-.site-nav .site-nav-link.current {
+.site-nav-link.current {
   color: var(--primary-brand-color);
 }
 
@@ -69,19 +65,17 @@ body {
 .site-nav-link:focus {
   color: var(--primary-text-color);
 }
-.contacts-item:hover,
-.contacts-item:focus {
-  color: var(--primary-brand-color);
-}
 
 .contacts-item {
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--title--text-color);
+}
+
+.contacts-item:hover,
+.contacts-item:focus {
+  color: var(--primary-brand-color);
 }
 
 /* Main Page */
@@ -91,7 +85,6 @@ body {
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
-  letter-spacing: 0.02em;
   color: var(--white-color);
 }
 
@@ -99,9 +92,7 @@ body {
   background-color: var(--title--text-color);
 }
 
-.order-button,
-.order-button:hover,
-.order-button:focus {
+.order-button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -111,30 +102,31 @@ body {
   background-color: var(--primary-brand-color);
 }
 
+.order-button:hover,
+.order-button:focus {
+  background-color: var(--secondary-brand-color);
+}
+
 .section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  letter-spacing: 0.02em;
+  text-align: center;
   color: var(--title--text-color);
 }
 
 .features-title,
-.team-title,
-.example-title {
+.example-title,
+.team-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.02em;
   color: var(--title--text-color);
 }
 
-.features-descr,
-.team-descr,
-.example-descr {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+.team-title,
+.team-descr {
+  text-align: center;
 }
 
 .our-team-container {
@@ -144,10 +136,6 @@ body {
 /* Footer */
 .footer-section {
   background-color: var(--title--text-color);
-  font-family: "Roboto";
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: var(--accent-color);
 }
 
@@ -157,7 +145,7 @@ body {
 
 /* Portfolio Main  */
 
-.secondary-button {
+.example-filter-button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -166,8 +154,9 @@ body {
   background: var(--background-color);
   cursor: pointer;
 }
-.secondary-button:hover,
-.secondary-button:focus {
+
+.example-filter-button:hover,
+.example-filter-button:focus {
   color: var(--white-color);
   background: var(--secondary-brand-color);
 }
