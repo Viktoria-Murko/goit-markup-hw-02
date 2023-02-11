@@ -159,3 +159,7 @@ body {
   color: var(--white-color);
   background: var(--secondary-brand-color);
 }
+
+.example-descr {
+  color: var(--primary-text-color);
+}
