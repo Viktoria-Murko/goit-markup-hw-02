@@ -57,31 +57,23 @@ body {
   text-decoration: none;
 }
 
+.site-nav-link:hover,
+.site-nav-link:focus,
+.contacts-item:hover,
+.contacts-item:focus,
 .site-nav-link.current {
   color: var(--primary-brand-color);
 }
 
-.site-nav-link:hover,
-.site-nav-link:focus {
-  color: var(--primary-text-color);
-}
-
 .contacts-item {
   font-style: normal;
-  font-weight: 400;
   text-decoration: none;
   color: var(--title--text-color);
-}
-
-.contacts-item:hover,
-.contacts-item:focus {
-  color: var(--primary-brand-color);
 }
 
 /* Main Page */
 
 .hero-title {
-  font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
@@ -93,6 +85,7 @@ body {
 }
 
 .order-button {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -108,10 +101,10 @@ body {
 }
 
 .section-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
+  text-transform: capitalize;
   color: var(--title--text-color);
 }
 
@@ -133,6 +126,10 @@ body {
   background-color: var(--background-color);
 }
 
+.our-team-list {
+  background-color: var(--white-color);
+}
+
 /* Footer */
 .footer-section {
   background-color: var(--title--text-color);
@@ -146,6 +143,7 @@ body {
 /* Portfolio Main  */
 
 .example-filter-button {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
